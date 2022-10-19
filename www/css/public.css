@@ -97,7 +97,8 @@ p{word-break: keep-all;}
 body.hidden{overflow: hidden;height: 100%;}
 
 /* .public--container{margin-top: 200px;} */
-.public--container{margin-top: 150px;}
+.public--container[data-sub="show"]{margin-top: 154px;}
+.public--container{margin-top: 99px;}
 .public--wrap{width: 100%;max-width: 1400px;padding: 0 var(--sidePd--);margin-left: auto;margin-right: auto;}
 .public--padding{padding: 0 var(--sidePd--);}
 

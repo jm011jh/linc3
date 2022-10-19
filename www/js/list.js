@@ -1,4 +1,3 @@
-$(".subscribeLincBar").addClass("hide")
 var winT = $(document).scrollTop(),
     lastScrollTop = 0,
     delta = 15;
@@ -9,13 +8,13 @@ $(window).scroll(function(){
 
     if (Math.abs(lastScrollTop - winT) <= delta) return;
     if (winT < 10){
-        $(".subscribeLincBar").addClass("hide")
+        $(".subscribeLincBar").removeClass("show")
     } else {
-        $(".subscribeLincBar").removeClass("hide")
+        $(".subscribeLincBar").addClass("show")
         if ((winT > lastScrollTop) && (lastScrollTop > 0)) {
-            $(".subscribeLincBar").removeClass("hide")
+            $(".subscribeLincBar").addClass("show")
         } else {
-            $(".subscribeLincBar").addClass("hide")
+            $(".subscribeLincBar").removeClass("show")
         }
     }
     lastScrollTop = winT;

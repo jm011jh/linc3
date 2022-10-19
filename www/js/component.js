@@ -1,2 +1,5 @@
-$.get("../Header.html", (data) => {$("#header").prepend(data)})
-$.get("../Footer.html", (data) => {$("#footer").prepend(data)})
+function compInit(){
+    $.get("../Header.html", (data) => {$("#header").prepend(data)})
+    $.get("../Footer.html", (data) => {$("#footer").prepend(data)})
+}
+compInit()
