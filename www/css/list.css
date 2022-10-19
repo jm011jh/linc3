@@ -8,9 +8,12 @@
 }
 .list-contents{padding-top: 52px;position: relative;padding-bottom: 28px;}
 .list--bnr{display: flex;justify-content: space-between;padding: 0 48px;margin-bottom: 68px;border-radius: 16px;border: 1px solid #000;}
-.list--bnr-text{width: 50%;display: flex;flex-direction: column;justify-content: center;}
-.list--bnr-text01{font-size: 32px;font-weight: 700;}
-.list--bnr-text02{font-size: 17px;margin-top: 1.8em;line-height: 1.5;}
+.list--bnr-text{width: 50%;display: flex;flex-direction: column;justify-content: space-between;padding: 60px 0 36px;}
+.list--bnr-text00{font-size: 18px;margin-bottom: 1em;font-weight: 600;line-height: 1;}
+.list--bnr-text00.knock{color: #08bbc6;}
+.list--bnr-text01{font-size: 48px;font-weight: 700;line-height: 1;}
+.list--bnr-text02{font-size: 17px;margin-top: 1.3em;line-height: 1.5;opacity: 0.82;}
+.list--bnr-text03{font-size: 18px;font-weight: 600;line-height: 1.5;}
 /* .list--bnr-bg{width: calc(100%/(10/3));border: 1px solid #000;} */
 .list--bnr-bg{width:360px;border: 1px solid #000;}
 .list--bnr-bgImg{width: 100%;padding-top: 100%;}
@@ -28,6 +31,8 @@
 .list--itemInfo-text01{display: flex;}
 .list--itemInfo-text01 p{font-size: 12px;padding: 6px 7px;border-radius: 20px;line-height: 1;font-weight: 500;}
 .list--itemInfo-text01 .lincCompany{color: #ff4e3d;background-color: #ffdedb;}
+.list--itemInfo-text01 .knock{color: #08bbc6;background-color: #edfbfb;}
+.list--itemInfo-text01 .lincAward{color: #f49500;background-color: #fff9ee;}
 .list--itemInfo-text02{margin-top: 0.8em;font-size: 17px;font-weight: 700;padding-right: 1em;
     word-break: keep-all;
     line-height: 1.33;
@@ -40,7 +45,7 @@
     -webkit-box-orient: vertical;
 }
 .list--itemInfo-time span{display: block;margin-right: 6px;}
-.list--itemInfo-time{margin-top: 18px;padding-top: 16px;border-top: 1px solid #666;color: #666;font-size: 13px;display: flex;align-items: center;line-height: 1;}
+.list--itemInfo-time{margin-top: 18px;padding-top: 16px;border-top: 1px solid #eee;color: #666;font-size: 13px;display: flex;align-items: center;line-height: 1;}
 .list--itemInfo-time .material-symbols-outlined{font-size: 16px;}
 
 .subscribeLincBar{position:sticky;bottom:40px;left: 0%;z-index: 20;width: 100%;transform: translate(0,0);opacity: 1;transition-duration: 0.2s;}

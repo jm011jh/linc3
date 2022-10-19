@@ -1,3 +1,4 @@
+$(".subscribeLincBar").addClass("hide")
 var winT = $(document).scrollTop(),
     lastScrollTop = 0,
     delta = 15;

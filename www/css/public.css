@@ -97,12 +97,15 @@ p{word-break: keep-all;}
 body.hidden{overflow: hidden;height: 100%;}
 
 /* .public--container{margin-top: 200px;} */
-.public--container{margin-top: 106px;}
+.public--container{margin-top: 150px;}
 .public--wrap{width: 100%;max-width: 1400px;padding: 0 var(--sidePd--);margin-left: auto;margin-right: auto;}
 .public--padding{padding: 0 var(--sidePd--);}
 
-.public--where{width: 100%;display: flex;align-items:center;justify-content: flex-end;font-size: 13px;margin-bottom: 40px;}
+.public--where{width: 100%;display: flex;align-items:center;justify-content: flex-end;font-size: 13px;margin-bottom: 20px;line-height: 1;}
 .public--where a,
 .public--where p{display: flex;align-items: center;}
-.public--where-home{color: #8c8c8c;}
+.public--where-before{color: #8c8c8c;}
 .public--where-now{font-weight: 600;color: #000;}
+.public--where .material-symbols-outlined{font-size: 16px;}
+
+/* #footer{padding-top: 500px;} */
