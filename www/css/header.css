@@ -25,7 +25,9 @@
 
 .header--subWrap-list{display: none;justify-content: center;border-bottom: 1px solid #ddd;}
 .header--subWrap-listItem a{display:block;font-size: 16px;padding: 18px 24px;}
-
+@media all and (max-width:769px){
+    .header--subWrap-listItem a{padding: 14px 12px;font-size: 13px;}
+}
 .headerComponent[data-visit="1"] .header--menu a:nth-child(1){color: #0246ff;}
 .headerComponent[data-visit="1"] .header--subWrap-list{display: flex;}
 .headerComponent[data-visit="2"] .header--menu a:nth-child(2){color: #0246ff;}
