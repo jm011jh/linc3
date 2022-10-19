@@ -1,0 +1,24 @@
+#header{position: fixed;top: 0;left: 0;width: 100%;z-index: 100;}
+
+.header--container{background-color: #fff;}
+.header--wrap{padding: 16px var(--sidePd--);border-bottom: 1px solid #ddd;display: flex;justify-content: space-between;}
+.header--logo{position: relative;z-index: 49;width: 69px;}
+.header--logo img{width: 100%;}
+
+.header--menu{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);display: flex;justify-content: center;width: 100%;z-index: 48;}
+.header--menu a{padding: 18px 24px;font-size: 18px;font-weight: 500;color: #000;display: flex;}
+.header--menu a p{position: relative;}
+.header--menu a.onVisit{color: #0246ff;}
+.header--menu a.onVisit span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
+
+.header--tools{position: relative;z-index: 49;}
+.header--tools-siteVisit{display: flex;align-items: center;font-size: 13px;margin-right: 20px;}
+.header--tools-siteVisit img{display: block;margin-right: 8px;}
+.header--tools{display: flex;align-items: center;}
+.header--tools-review{background-color: #0246ff;padding: 11px 17px;border-radius: 24px;color: #fff;font-weight: 500;font-size: 13px;display: flex;height: 35px;align-items: center;margin-right: 24px;}
+#headerSearchButton{margin-right: 24px;}
+#headerSearchButton img{display: block;}
+#headerSearchButton,
+#headerSearchHam{cursor: pointer;}
+#headerSearchHam{width: 20px;height: 14px;display: flex;flex-direction: column;justify-content: space-between;}
+#headerSearchHam span{width: 100%;height: 2px;display: block;background-color: #000;}

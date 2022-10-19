@@ -1,0 +1,53 @@
+<div class="footer--container">
+    <div class="public--wrap">
+        <div class="footer--notice">
+            <div class="footer--newsletter">NEWS LETTER</div>
+            <div class="footer--noticeSwiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- 공지사항 글 인 경우 이 요소를 출력해주세요. -->
+                        <div>
+                            <p class="noticeSwiper--notice">공지사항</p>
+                            <p class="noticeSwiper--title">{제목이들어가는영역입니다}</p>
+                        </div>
+                        <p class="noticeSwiper--date">{YYYY.MM.DD}</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- 공지사항 글 인 경우 이 요소를 출력해주세요. -->
+                        <div>
+                            <p class="noticeSwiper--notice">공지사항</p>
+                            <p class="noticeSwiper--title">{제목이들어가는영역입니다}</p>
+                        </div>
+                        <p class="noticeSwiper--date">{YYYY.MM.DD}</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- 공지사항 글 인 경우 이 요소를 출력해주세요. -->
+                        <div>
+                            <p class="noticeSwiper--notice">공지사항</p>
+                            <p class="noticeSwiper--title">{제목이들어가는영역입니다}</p>
+                        </div>
+                        <p class="noticeSwiper--date">{YYYY.MM.DD}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="noticeSwiper--button">
+                <div class="noticeSwiper--prev"><span class="material-symbols-outlined">navigate_before</span></div>
+                <div class="noticeSwiper--next"><span class="material-symbols-outlined">navigate_before</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var footerNoticeSwiper = new Swiper('.footer--noticeSwiper', {
+    speed: 1,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.noticeSwiper--next',
+        prevEl: '.noticeSwiper--prev',
+    },
+});
+</script>
