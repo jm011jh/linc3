@@ -19,3 +19,8 @@ $(window).scroll(function(){
     }
     lastScrollTop = winT;
 })
+
+$(".list--sort-optionValue").click(function(){
+    $(".list--sort-optionValue").removeClass("checked")
+    $(this).addClass("checked")
+})
