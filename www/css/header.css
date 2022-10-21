@@ -45,3 +45,30 @@
 .headerComponent[data-sub-visit="1"] .header--subWrap-listItem:nth-child(1) a{font-weight: 700;}
 .headerComponent[data-sub-visit="2"] .header--subWrap-listItem:nth-child(2) a{font-weight: 700;}
 .headerComponent[data-sub-visit="3"] .header--subWrap-listItem:nth-child(3) a{font-weight: 700;}
+
+
+/* header search */
+.header--searchPopup.show{display: block;}
+.header--searchPopup{display: none;}
+.header--searchPopup{position: absolute;width: 100%;top: 0;left: 0;background-color: #fff;z-index: 99;padding: 40px var(--sidePd--);}
+.header--searchPopupWrap{display: flex;justify-content: center;width: 100%;}
+
+.header--searchLogo{width: 69px;position: absolute;left: var(--sidePd--);transform: translate(0,-26px);}
+.header--searchLogo img{width: 100%;display: block;}
+.header--search-figure{width: 100%;max-width: 640px;}
+.header--searchBox{padding: 0px 32px;border-radius: 40px;border: 1px solid #ddd;display: flex;align-items: center;margin-bottom: 20px;}
+.header--searchInput{outline: none;border: 0px solid #000;padding: 22px 0;font-size: 18px;line-height: 1;width: 100%;}
+.header--searchInput::placeholder{color:#000;font-weight: 700;}
+.header--searchIcon{margin-right: 24px;}
+.header--search-tags{display: flex;justify-content: center;align-items: center;}
+.header--search-tags a{display: block;padding: 12px 16px;font-size: 15px;color: #666;background-color: #f7f7f7;border-radius: 32px;cursor: pointer;}
+.header--search-tags a:not(:last-child){margin-right: 10px;}
+
+.header--searchPopup-close{width: 38px;height: 38px;padding: 8px;position: absolute;right: var(--sidePd--);cursor: pointer;margin-right: 34px;top: 32px;}
+.header--searchPopup-close span{width: 30px;height: 2px;background-color: #000;display: block;position: absolute;top: 50%;left: 50%;}
+.header--searchPopup-close span:first-child{transform: translate(-50%,-50%)rotate(45deg);}
+.header--searchPopup-close span:last-child{transform: translate(-50%,-50%)rotate(-45deg);}
+
+.header--searchBg{width: 100%;height: 100vh;background-color: rgba(0,0,0,0.5);top: 0;left: 0;position: absolute;}
+.header--searchBg{display: none;}
+.show.header--searchBg{display: block;}

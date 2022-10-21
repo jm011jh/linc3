@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/list.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
     <div class="public--container" data-sub="show">
@@ -19,7 +20,7 @@
                         <a href="/">Home<span class="material-symbols-outlined">navigate_next</span></a>
                     </div>
                     <div class="public--where-before">
-                        <a href="/chlinc3.html">채널 링크 3.0<span class="material-symbols-outlined">navigate_next</span></a>
+                        <a href="/chlinc3.html">채널 링크3.0<span class="material-symbols-outlined">navigate_next</span></a>
                     </div>
                     <div class="public--where-now">
                         <a href="">똑똑 위클리</a>
@@ -30,7 +31,7 @@
                 <div class="list--bnr">
                     <div class="list--bnr-text">
                         <div class="list--bnr-textBox">
-                            <p class="list--bnr-text00 knock">채널 링크 3.0</p>
+                            <p class="list--bnr-text00 knock">채널 링크3.0</p>
                             <p class="list--bnr-text01">똑똑 위클리</p>
                             <p class="list--bnr-text02">#LINC3.0 사업 핵심 이슈<br>#일타 강사가 쏙쏙! 알려주는 알짜 사업 정보</p>
                         </div>
@@ -183,7 +184,16 @@
         </div>
     </div>
     <div id="header" class="headerComponent" data-visit="1" data-sub-visit="1"></div>
-    <div id="footer" class="footerComponent"style="border-top:1px solid #000;padding-top:400px"></div>
+    <div id="footer" class="footerComponent"LINC3.0></div>
+    <div id="listVideoPopup" class="list--videoPopup">
+        <div class="list--videoPopup-bg"></div>
+        <div class="list--videoPopup-wrap">
+            <div class="list--videoPopup-figure">
+                <!--item클릭 시 해당 item의 비디오 아이디값으로 ifram의 아이디값을 변경해주세요. -->
+                <iframe width="" height="" src="https://www.youtube.com/embed/{아이디값}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

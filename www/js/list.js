@@ -1,3 +1,4 @@
+
 var winT = $(document).scrollTop(),
     lastScrollTop = 0,
     delta = 15;
@@ -23,4 +24,10 @@ $(window).scroll(function(){
 $(".list--sort-optionValue").click(function(){
     $(".list--sort-optionValue").removeClass("checked")
     $(this).addClass("checked")
+})
+$(".list--itemThumb-img").click(function(){
+    $("#listVideoPopup").addClass('show')
+})
+$(".list--videoPopup-bg").click(function(){
+    $("#listVideoPopup").removeClass('show')
 })

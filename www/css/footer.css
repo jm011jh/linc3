@@ -1,7 +1,7 @@
 .footer--notice{display: flex;align-items: center;}
 .footer--newsletter{width: 90px;font-size: 13px;font-weight: 600;}
 .footer--noticeSwiper{width: calc(100% - 180px);}
-.footer--noticeSwiper .swiper-slide{display: flex;align-items: center;padding: 0 20px;}
+.footer--noticeSwiper .swiper-slide{display: flex;align-items: center;padding: 0 20px;background-color: #fff;}
 .footer--noticeSwiper .swiper-slide div{display: flex;align-items: center;}
 
 .noticeSwiper--notice{font-size: 14px;font-weight: 600;}
@@ -38,3 +38,5 @@
     .footer--company{flex-wrap: wrap;justify-content: center;}
     .footer--companyItem{margin-bottom: 12px;}
 }
+
+#footer{padding-top: 400px;}

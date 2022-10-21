@@ -2,7 +2,7 @@
     <div class="header--wrap">
         <a href="/" class="header--logo"><img src="./img/logo01.png" alt=""></a>
         <div class="header--menu">
-            <a class="" href="./chlinc3.html"><p>채널 링크 3.0<span></span></p></a>
+            <a class="" href="./chlinc3.html"><p>채널 링크3.0<span></span></p></a>
             <a class="" href=""><p>성과영상<span></span></p></a>
             <a class="" href=""><p>LINC3.0 사업단<span></span></p></a>
             <a class="" href=""><p>소식모아보기<span></span></p></a>
@@ -26,4 +26,42 @@
             <div class="header--subWrap-listItem"><a href="./list03.html">링크 컴퍼니</a></div>
         </div>
     </div>
+    <div class="header--searchBg"></div>
+    <div class="header--searchPopup">
+        <div class="header--searchPopupWrap">
+            <div class="header--searchLogo"><img src="./img/logo01.png" alt=""></div>
+            <div class="header--search-figure">
+                <form action="">
+                    <div class="header--searchBox">
+                        <div class="header--searchIcon"><img src="./img/header_icon_search.png" alt=""></div>
+                        <input class="header--searchInput" type="text" placeholder="검색어를 입력하세요.">
+                    </div>
+                </form>
+                <div class="header--search-tags">
+                    <a class="header--search-tagValue">LINC3.0 채널</a>
+                    <a class="header--search-tagValue">사업단 상세페이지</a>
+                    <a class="header--search-tagValue">성과영상</a>
+                    <a class="header--search-tagValue">소식과 행사정보</a>
+                </div>
+            </div>
+            <div id="headerSearchClose" class="header--searchPopup-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    $("#headerSearchButton").click(function(){
+        $(".header--searchPopup").addClass("show")
+        $(".header--searchBg").addClass("show")
+    })
+    $("#headerSearchClose").click(function(){
+        $(".header--searchPopup").removeClass("show")
+        $(".header--searchBg").removeClass("show")
+    })
+    $(".header--searchBg").click(function(){
+        $(".header--searchPopup").removeClass("show")
+        $(".header--searchBg").removeClass("show")
+    })
+</script>
