@@ -16,6 +16,7 @@ $(".map--area-svg").mouseleave(function(){
 })
 $(".bs--sortList-item").click(function(){
     $(".bs--sortList-item").removeClass("on")
+    $(".bs--figure").removeClass("toLeft")
     if(!$(this).hasClass("on")){
         $(this).addClass("on")
     }

@@ -1,22 +1,26 @@
 <div class="header--container">
     <div class="header--wrap">
         <a href="/" class="header--logo"><img src="./img/logo01.png" alt=""></a>
-        <div class="header--menu">
-            <a class="" href="./chlinc3.html"><p>채널 링크3.0<span></span></p></a>
-            <a class="" href=""><p>성과영상<span></span></p></a>
-            <a class="" href=""><p>LINC3.0 사업단<span></span></p></a>
-            <a class="" href=""><p>소식모아보기<span></span></p></a>
-            <a class="" href=""><p>이벤트<span></span></p></a>
-            <a class="" href=""><p>편성표<span></span></p></a>
-        </div>
-        <div class="header--tools">
-            <div class="header--tools-siteVisit">
-                <img src="./img/header_icon_eye.png" alt="">
-                <p>{방문자수1234}</p>
+        <div class="header--right">
+            <div class="header--menu">
+                <a class="" href="./chlinc3.html"><p>채널 링크3.0<span></span></p></a>
+                <a class="" href=""><p>성과영상<span></span></p></a>
+                <a class="" href=""><p>LINC3.0 사업단<span></span></p></a>
+                <a class="" href=""><p>소식모아보기<span></span></p></a>
+                <a class="" href=""><p>이벤트<span></span></p></a>
+                <a class="" href=""><p>편성표<span></span></p></a>
             </div>
-            <a class="header--tools-review" href=""><p>링크+ TV 다시보기</p></a>
-            <div id="headerSearchButton"><img src="./img/header_icon_search.png" alt=""></div>
-            <div id="headerSearchHam"><span></span><span></span><span></span></div>
+            <div class="header--tools">
+                <div class="header--tools-siteVisit">
+                    <img src="./img/header_icon_eye.png" alt="">
+                    <p>{방문자수1234}</p>
+                </div>
+                <a class="header--tools-review" href="">링크+ TV 다시보기</a>
+                <a class="header--tools-member" href="로그인">로그인</a>
+    
+                <div id="headerSearchButton"><img src="./img/header_icon_search.png" alt=""></div>
+                <div id="headerSearchHam"><span></span><span></span><span></span></div>
+            </div>
         </div>
     </div>
     <div class="header--subWrap">
@@ -33,7 +37,7 @@
             <div class="header--search-figure">
                 <form action="">
                     <div class="header--searchBox">
-                        <div class="header--searchIcon"><img src="./img/header_icon_search.png" alt=""></div>
+                        <button type="submit" class="header--searchIcon"><img src="./img/header_icon_search.png" alt=""></button>
                         <input class="header--searchInput" type="text" placeholder="검색어를 입력하세요.">
                     </div>
                 </form>
@@ -49,6 +53,9 @@
                 <span></span>
             </div>
         </div>
+        <div class="header--mobile">
+            
+        </div>
     </div>
 </div>
 <script>
@@ -63,5 +70,9 @@
     $(".header--searchBg").click(function(){
         $(".header--searchPopup").removeClass("show")
         $(".header--searchBg").removeClass("show")
+    })
+    $("#headerSearchHam").click(function(){
+        $(".header--searchPopup").addClass("show")
+        $(".header--searchBg").addClass("show")
     })
 </script>
