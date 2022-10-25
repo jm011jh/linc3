@@ -2,7 +2,7 @@
 
 .header--container{background-color: #fff;}
 .header--wrap{padding: 14px var(--sidePd--);border-bottom: 1px solid #ddd;display: flex;justify-content: space-between;position: relative;}
-.header--logo{position: relative;z-index: 49;width: 69px;}
+.header--logo{position: relative;z-index: 49;width: 69px;display: flex;align-items: center;max-width: 69px;min-width:69px}
 .header--logo img{width: 100%;display: block;}
 
 .header--right{display: flex;align-items: center;}
@@ -22,7 +22,7 @@
 #headerSearchButton img{display: block;}
 #headerSearchButton,
 #headerSearchHam{cursor: pointer;}
-#headerSearchHam{width: 20px;height: 14px;display: flex;flex-direction: column;justify-content: space-between;display: none;}
+#headerSearchHam{width: 20px;height: 14px;display: flex;flex-direction: column;justify-content: space-between;display: none;min-width:20px;max-width:20px}
 #headerSearchHam span{width: 100%;height: 2px;display: block;background-color: #000;}
 
 .header--subWrap-list{display: none;justify-content: center;border-bottom: 1px solid #ddd;}
@@ -34,13 +34,13 @@
 .headerComponent[data-visit="3"] .header--menu a:nth-child(3){color: #0246ff;}
 .headerComponent[data-visit="4"] .header--menu a:nth-child(4){color: #0246ff;}
 .headerComponent[data-visit="5"] .header--menu a:nth-child(5){color: #0246ff;}
-.headerComponent[data-visit="5"] .header--menu a:nth-child(6){color: #0246ff;}
+.headerComponent[data-visit="6"] .header--menu a:nth-child(6){color: #0246ff;}
 .headerComponent[data-visit="1"] .header--menu a:nth-child(1) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
 .headerComponent[data-visit="2"] .header--menu a:nth-child(2) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
 .headerComponent[data-visit="3"] .header--menu a:nth-child(3) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
 .headerComponent[data-visit="4"] .header--menu a:nth-child(4) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
 .headerComponent[data-visit="5"] .header--menu a:nth-child(5) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
-.headerComponent[data-visit="5"] .header--menu a:nth-child(6) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
+.headerComponent[data-visit="6"] .header--menu a:nth-child(6) span{display: block;width: 4px;height: 4px;background-color: #ff1a1a;position: absolute;top: 0;right: 0;transform: translate(100%,-100%);}
 
 .headerComponent[data-sub-visit="1"] .header--subWrap-listItem:nth-child(1) a{font-weight: 700;}
 .headerComponent[data-sub-visit="2"] .header--subWrap-listItem:nth-child(2) a{font-weight: 700;}
@@ -85,7 +85,7 @@
 @media all and (max-width:1280px){
     .header--menu{display: none;}
     #headerSearchButton{display: none;}
-    #headerSearchHam{display: flex;}
+    #headerSearchHam{display: flex;margin-top: 24px;margin-right: 20px;}
     .header--tools-siteVisit{display: none;}
     .header--tools-member{display: none;}
     .header--tools-review{display: none;}
@@ -98,5 +98,9 @@
     .header--tools-member{font-size: 12px;padding: 7px 12px;display: flex;align-items: center;height: unset;}
 } */
 @media all and (max-width:769px){
+    .header--logo{width: 48px;min-width: 48px;max-width: 48px;}
     .header--subWrap-listItem a{padding: 14px 12px;font-size: 13px;}
+    #headerSearchHam{margin-top: 15px;margin-right: 20px;}
 }
+.header--tools-isMember{display: flex;align-items: center;margin-right: 20px;cursor: pointer;}
+.header--tools-isMember-icon{width: 48px;height: 48px;border-radius: 50%;overflow: hidden;background-size: cover;background-position: center center;background-repeat: no-repeat;}
