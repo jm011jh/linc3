@@ -53,13 +53,16 @@
                                 <div class="member--figureItem-row">
                                     <div class="member--figureItem-row-title">대학교명<span class="essential"></span></div>
                                     <div class="member--figureItem-inputBox">
-                                        <input type="text" placeholder="느그대학교">
+                                        <input type="text" placeholder="우리대학교">
                                     </div>
                                 </div>
                                 <div class="member--figureItem-row member--figureItem-row-flexStart">
                                     <div class="member--figureItem-row-title">대학 로고<span class="essential"></span></div>
                                     <div class="member--figureItem-inputBox">
-                                        <input type="text" placeholder="느그대학교">
+                                        <div class="member--figureItem-inputBox-blocked">
+                                            <p>첨부파일을 추가해주세요.</p>
+                                            <div class="member--figureItem-fileUpload"><span class="material-symbols-outlined">folder_open</span></div>
+                                        </div>
                                         <p class="member--figureItem-inputBox-exp">5MB를 초과할 수 없으며<br>JPEG, JPG, PNG, GIF 형식의 파일만 가능합니다.</p>
                                     </div>
                                 </div>
@@ -105,18 +108,27 @@
                                     <div class="member--figureItem-row-title">페이스북<span class="essential"></span></div>
                                     <div class="member--figureItem-inputBox">
                                         <input type="text" placeholder="URL을 입력해주세요">
+                                        <div class="member--figureItem-inputClear">
+                                            <span class="material-symbols-outlined">delete</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="member--figureItem-row">
                                     <div class="member--figureItem-row-title">인스타그램<span class="essential"></span></div>
                                     <div class="member--figureItem-inputBox">
                                         <input type="text" placeholder="URL을 입력해주세요">
+                                        <div class="member--figureItem-inputClear">
+                                            <span class="material-symbols-outlined">delete</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="member--figureItem-row">
                                     <div class="member--figureItem-row-title">유튜브<span class="essential"></span></div>
                                     <div class="member--figureItem-inputBox">
                                         <input type="text" placeholder="URL을 입력해주세요">
+                                        <div class="member--figureItem-inputClear">
+                                            <span class="material-symbols-outlined">delete</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="member--figureItem-final">
@@ -133,8 +145,9 @@
                                 </div>
                                 <div class="member--figureItem-row">
                                     <div class="member--figureItem-row-title">검색 타이틀<span class="essential"></span></div>
-                                    <div class="member--figureItem-inputBox">
-                                        <input type="text" placeholder="URL을 입력해주세요">
+                                    <div class="member--figureItem-inputBox member--figureItem-inputBox2">
+                                        <div class="member--figureItem-fixedBox">링크3.0</div>
+                                        <input type="text" placeholder="학교명">
                                     </div>
                                 </div>
                                 <div class="member--figureItem-row member--figureItem-row-flexStart">
@@ -157,7 +170,7 @@
                         </div>
                     </div>
                     <div class="member--submit">
-                        <div id="formReset" class="form--reset-button"><p>초기화</p></div>
+                        <div id="formReset" class="form--reset-button"><span class="material-symbols-outlined">refresh</span><p>초기화</p></div>
                         <button type="submit" id="formSave" class="form--save-button"><p>저장하기</p></button>
                     </div>
                 </form>
@@ -171,6 +184,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/component.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/member02.js"></script>
 </body>
 </html>

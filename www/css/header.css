@@ -93,10 +93,10 @@
     .header--searchPopup-close{margin-right: -4px;}
     .header--mobile{display: block;}
 }
-@media all and (max-width:1024px){
+/* @media all and (max-width:1024px){
     .header--tools-review,
     .header--tools-member{font-size: 12px;padding: 7px 12px;display: flex;align-items: center;height: unset;}
-}
+} */
 @media all and (max-width:769px){
     .header--subWrap-listItem a{padding: 14px 12px;font-size: 13px;}
 }
