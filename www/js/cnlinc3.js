@@ -42,3 +42,8 @@ $(window).scroll(function(){
     }
     lastScrollTop = winT;
 })
+
+$(".s4--info04-item").click(function(){
+    $(".s4--info04-item").removeClass("on")
+    $(this).addClass("on")
+})

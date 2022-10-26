@@ -25,7 +25,57 @@
                 <div id="isMember" class="header--tools-isMember">
                     <!-- header--tools-isMember-icon 의 style:background-image는 회원이 등록한 이미지로 출력되게 부탁드립니다.(없을 시 header_ismember_basic.png 로 출력) -->
                     <div class="header--tools-isMember-icon" style="background-image: url(./img/header_ismember_basic.png);"></div>
-                    <span class="material-symbols-outlined">expand_more</span>
+                    <span class="isMemberExpand material-symbols-outlined">expand_more</span>
+
+                    <div class="header--member-popup">
+                        <div class="header--member-popup-bg"></div>
+                        <div class="member-popup-container">
+                            <div class="member--popup-info">
+                                <div class="member--popup-info-thumb">
+                                    <!-- member--popup-info-thumbImg의 background-image 에는 회원프로필사진이 출력되게 부탁드립니다. 
+                                        현재는 테스트로 member_thumb_basic.png가 배치되어 있습니다.
+                                        회원이 프로필사진을 등록하지 않은 경우, /img/member_thumb_basic.png가 기본으로 출력되게 부탁드립니다.
+                                    -->
+                                    <div class="member--popup-info-thumbImg" style="background-image: url(/img/member_thumb_basic.png);"></div>
+                                    <a href="/member01.html"><span class="material-symbols-outlined">edit</span></a>
+                                </div>
+                                <div class="member--popup-info-text">
+                                    <div class="member--popup-info-type"><span>{타입값}</span></div>
+                                    <div class="member--popup-info-name">{회원이름} 님</div>
+                                </div>
+                            </div>
+                            <a href="/member01.html" class="member--popup-goMyLink">나의 사업단 관리하기</a>
+                            <div class="member--popup-menu">
+                                <a href="/member01.html" class="member--popup-menuLink">
+                                    <div class="member--popup-menuLink-icon">😬</div>
+                                    <div class="member--popup-menuLink-title">가입정보</div>
+                                </a>
+                                <a href="/member02.html" class="member--popup-menuLink">
+                                    <div class="member--popup-menuLink-icon">📚</div>
+                                    <div class="member--popup-menuLink-title">사업단 정보</div>
+                                </a>
+                                <a href="/member03.html" class="member--popup-menuLink">
+                                    <div class="member--popup-menuLink-icon">💬</div>
+                                    <div class="member--popup-menuLink-title">사업단 소식지</div>
+                                </a>
+                                <a href="/member04.html" class="member--popup-menuLink">
+                                    <div class="member--popup-menuLink-icon">🥳</div>
+                                    <div class="member--popup-menuLink-title">행사안내</div>
+                                </a>
+                                <a href="/member05.html" class="member--popup-menuLink">
+                                    <div class="member--popup-menuLink-icon">📹</div>
+                                    <div class="member--popup-menuLink-title">성과영상 업로드</div>
+                                </a>
+                                <a href="/member06.html" class="member--popup-menuLink">
+                                    <div class="member--popup-menuLink-icon">📢</div>
+                                    <div class="member--popup-menuLink-title">관리 안내 공지</div>
+                                </a>
+                            </div>
+                            <div class="member--popup-logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
     
                 <div id="headerSearchButton"><img src="./img/header_icon_search.png" alt=""></div>
@@ -35,8 +85,8 @@
     <div class="header--subWrap">
         <div class="header--subWrap-list">
             <div class="header--subWrap-listItem"><a href="./list01.html">똑똑 위클리</a></div>
-            <div class="header--subWrap-listItem"><a href="./list02.html">링크 어워드</a></div>
-            <div class="header--subWrap-listItem"><a href="./list03.html">링크 컴퍼니</a></div>
+            <div class="header--subWrap-listItem"><a href="./list02.html">링크 컴퍼니</a></div>
+            <div class="header--subWrap-listItem"><a href="./list03.html">링크 어워드</a></div>
         </div>
     </div>
     <div class="header--searchBg"></div>
@@ -62,8 +112,60 @@
                 <span></span>
             </div>
         </div>
-        <div class="header--mobile">
-            
+    </div>
+    <div class="header--mobile-menu">
+        <div class="header--mobile-menu-bg"></div>
+        <div class="header--mobile-menu-container">
+            <div class="header--mobile-menuLogo"><img src="./img/logo01.png" alt=""></div>
+            <div class="header--mobile-menuItem header--mobile-menuItem-list">
+                <div class="header--mobile-menuItem-title">
+                    <div class="header--mobile-menuItem-left"><img src="./img/logo01.png" alt=""><p>채널 링크3.0</p></div>
+                    <div class="header--mobile-menuItem-right"><span class="material-symbols-outlined">expand_more</span></div>
+                </div>
+                <div class="header--mobile-menuItem-links">
+                    <a href="/list01.html">똑똑 위클리</a>
+                    <a href="/list02.html">링크 컴퍼니</a>
+                    <a href="/list03.html">링크 어워드</a>
+                </div>
+            </div>
+            <a href="/performance.html" class="header--mobile-menuItem">
+                <div class="header--mobile-menuItem-title">
+                    <div class="header--mobile-menuItem-left"><span class="material-symbols-outlined">smart_display</span><p>성과영상</p></div>
+                    <div class="header--mobile-menuItem-right"></div>
+                </div>
+            </a>
+            <a href="/business.html" class="header--mobile-menuItem">
+                <div class="header--mobile-menuItem-title">
+                    <div class="header--mobile-menuItem-left"><span class="material-symbols-outlined">category</span><p>LINC3.0 사업단</p></div>
+                    <div class="header--mobile-menuItem-right"></div>
+                </div>
+            </a>
+            <div class="header--mobile-menuItem header--mobile-menuItem-list">
+                <div class="header--mobile-menuItem-title">
+                    <div class="header--mobile-menuItem-left"><span class="material-symbols-outlined">newspaper</span><p>소식 모아보기</p></div>
+                    <div class="header--mobile-menuItem-right"><span class="material-symbols-outlined">expand_more</span></div>
+                </div>
+                <div class="header--mobile-menuItem-links">
+                    <a href="/news.html">소식 모아보기</a>
+                    <a href="/news02.html">행사 모아보기</a>
+                </div>
+            </div>
+            <a href="/event.html" class="header--mobile-menuItem">
+                <div class="header--mobile-menuItem-title">
+                    <div class="header--mobile-menuItem-left"><span class="material-symbols-outlined">celebration</span><p>이벤트</p></div>
+                    <div class="header--mobile-menuItem-right"></div>
+                </div>
+            </a>
+            <a href="" class="header--mobile-menuItem">
+                <div class="header--mobile-menuItem-title">
+                    <div class="header--mobile-menuItem-left"><span class="material-symbols-outlined">calendar_month</span><p>편성표</p></div>
+                    <div class="header--mobile-menuItem-right"></div>
+                </div>
+            </a>
+            <div class="header--mobile-menu-goLink">
+                <a href="">링크+TV 다시보기</a>
+            </div>
+            <div class="header--mobile-menu-personal">개인정보처리방침</div>
         </div>
     </div>
 </div>
@@ -71,25 +173,55 @@
     $("#headerSearchButton").click(function(){
         $(".header--searchPopup").addClass("show")
         $(".header--searchBg").addClass("show")
+        $("body").addClass("hidden")
     })
     $("#headerSearchClose").click(function(){
         $(".header--searchPopup").removeClass("show")
         $(".header--searchBg").removeClass("show")
+        $("body").removeClass("hidden")
     })
     $(".header--searchBg").click(function(){
         $(".header--searchPopup").removeClass("show")
         $(".header--searchBg").removeClass("show")
+        $("body").removeClass("hidden")
     })
     $("#headerSearchHam").click(function(){
-        $(".header--searchPopup").addClass("show")
-        $(".header--searchBg").addClass("show")
+        $(".header--mobile-menu").addClass("show")
+        $("body").addClass("hidden")
+    })
+    $(".header--mobile-menu-bg").click(function(){
+        $(".header--mobile-menu").removeClass("show")
+        $("body").removeClass("hidden")
     })
 
-    $("#isMember").click(function(){
-        if($(this).hasClass("open")){
-            $(this).removeClass("open")
+    $("#isMember .header--tools-isMember-icon").click(function(){
+        if($("#isMember").hasClass("open")){
+            $("#isMember").removeClass("open")
+            $(".isMemberExpand").text("expand_more")
+            $("body").removeClass("hidden-atMobile")
+            $("body").removeClass("hidden")
         } else {
-            $(this).addClass("")
+            $("#isMember").addClass("open")
+            $(".isMemberExpand").text("expand_less")
+            $("body").addClass("hidden-atMobile")
+            $("body").addClass("hidden")
+        }
+    })
+    $(".header--member-popup-bg").click(function(){
+        $("#isMember").removeClass("open")
+        $(".isMemberExpand").text("expand_more")
+        $("body").removeClass("hidden-atMobile")
+        $("body").removeClass("hidden")
+    })
+    $(".header--mobile-menuItem-list").click(function(){
+        if($(this).hasClass("show")){
+            $(this).removeClass("show")
+            $(this).find(".header--mobile-menuItem-right .material-symbols-outlined").text("expand_more")
+            $(this).find(".header--mobile-menuItem-links").removeClass("show")
+        } else {
+            $(this).addClass("show")
+            $(this).find(".header--mobile-menuItem-right .material-symbols-outlined").text("expand_less")
+            $(this).find(".header--mobile-menuItem-links").addClass("show")
         }
     })
 </script>

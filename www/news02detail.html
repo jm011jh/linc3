@@ -19,7 +19,7 @@
                         <a href="/">Home<span class="material-symbols-outlined">navigate_next</span></a>
                     </div>
                     <div class="public--where-before">
-                        <a href="/news.html">소식 모아보기<span class="material-symbols-outlined">navigate_next</span></a>
+                        <a href="/news.html">행사 모아보기<span class="material-symbols-outlined">navigate_next</span></a>
                     </div>
                     <div class="public--where-now">
                         <a href="">게시글</a>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="boardDetail--title">
                     <div class="boardDetail--title-text">
-                        <div class="boardDetail--title-text01">{소식글 제목}</div>
+                        <div class="boardDetail--title-text01">{행사글 제목}</div>
                         <div class="boardDetail--title-text02">작성일:YYYY.MM.DD (요일) 12:30<span></span>담당자 : {담당자이름}</div>
                     </div>
                     <div class="boardDetail--title-view">
@@ -42,6 +42,33 @@
                         <!-- 게시글 내용이 boardDetail--preview에 나타납니다. 요소는 예시이며 자유롭게 출력되어도 무방합니다. -->
                         <img src="" alt="">
                         <p>게시글 내용은 이 곳에 나타납니다.</p>
+                    </div>
+                    <div class="member04--preview">
+                        <div class="member04--preview-row">
+                            <div class="member04--preview-text01"><span>기</span><span>간</span></div>
+                            <!-- 게시글 작성 시 지정했던 시작기간, 마감기간이 출력되게 부탁드립니다. -->
+                            <div class="member04--preview-text02"><p>{YYYY.MM.DD} ~ {YYYY.MM.DD}</p></div>
+                        </div>
+                        <div class="member04--preview-row">
+                            <div class="member04--preview-text01"><span>장</span><span>소</span></div>
+                            <!-- 게시글 작성 시 지정했던 장소가 출력되게 부탁드립니다. -->
+                            <div class="member04--preview-text02"><p>{장소값}</p></div>
+                        </div>
+                        <div class="member04--preview-row">
+                            <div class="member04--preview-text01"><span>대</span><span>상</span></div>
+                            <!-- 게시글 작성 시 지정했던 대상이 출력되게 부탁드립니다. -->
+                            <div class="member04--preview-text02"><p>{대상값}</p></div>
+                        </div>
+                        <div class="member04--preview-row">
+                            <div class="member04--preview-text01"><span>참</span><span>여</span><span>방</span><span>법</span></div>
+                            <!-- 게시글 작성 시 지정했던 참여방법이 출력되게 부탁드립니다. -->
+                            <div class="member04--preview-text02"><p>{참여방법내용}</p></div>
+                        </div>
+                        <div class="member04--preview-row">
+                            <div class="member04--preview-text01"><span>문</span><span>의</span><span>처</span></div>
+                            <!-- 게시글 작성 시 지정했던 참여방법이 출력되게 부탁드립니다. -->
+                            <div class="member04--preview-text02"><p>{문의처값}</p></div>
+                        </div>
                     </div>
                     <div class="boardDetail--preview-menu">
                         <!-- 게시글을 수정하거나 삭제할 수 있는 버튼들 입니다. boardDetail--preview-menuBtn요소를 div(다른요소)로 바꿔도 무관합니다.-->

@@ -67,12 +67,12 @@
 :root{
     --sidePd--: 60px;
 }
-@media all and (max-width:1024px) {
+@media all and (max-width:1025px) {
     :root{
         --sidePd--:40px;
     }
 }
-@media all and (max-width:767px) {
+@media all and (max-width:769px) {
     :root{
         --sidePd--:20px;
     }
@@ -88,17 +88,19 @@
     'opsz' 24
   }
 *{font-family: 'Pretendard';padding: 0;margin: 0;box-sizing: border-box;}
-body{font-family: 'Pretendard';}
+body{font-family: 'Pretendard';position: relative;width: 100%;}
 input,textarea{font-family: 'Pretendard';}
 li{list-style: none;}
 a{color: inherit;text-decoration: none;}
 p{word-break: keep-all;}
 .relative{position: relative;}
 body.hidden{overflow: hidden;height: 100%;}
-
+@media all and (max-width:481px){
+    body.hidden-atMobile{overflow: hidden;height: 100%;}
+}
 /* .public--container{margin-top: 200px;} */
-.public--container[data-sub="show"]{margin-top: 154px;}
-.public--container{margin-top: 99px;}
+.public--container[data-sub="show"]{padding-top: 154px;}
+.public--container{padding-top: 99px;}
 .public--wrap{width: 100%;max-width: 1400px;padding: 0 var(--sidePd--);margin-left: auto;margin-right: auto;}
 .public--padding{padding: 0 var(--sidePd--);}
 

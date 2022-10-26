@@ -65,7 +65,7 @@
     .bs--sortList{flex-wrap: wrap;margin-top: 40px;}
     .bs--sortList-item{font-size: 14px;padding: 10px 12px;margin-bottom: 6px;}
 }
-@media all and (max-width:480px){
+@media all and (max-width:481px){
     .bs--figure:first-child{padding: 0 20px;}
 
     .bs--title-text01{font-size: 20px;}

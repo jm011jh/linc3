@@ -1,16 +1,22 @@
 .board--title-text01{font-size: 40px;font-weight: 700;margin-bottom: 0.7em;line-height: 1;}
 .board--title-text02{font-size: 16px;color: #666666;}
-.board--sort{margin-top: 60px;display: flex;}
-.board--sort-option{height: 42px;display: flex;align-items: center;justify-content: center;text-align: center;padding: 10px 16px;border-radius: 4px;color: #666666;background-color: #f8f8f8;margin-right: 6px;font-size: 15px;cursor: pointer;font-weight: 700;}
+.board--otherLink{margin-top: 60px;display: flex;}
+.board--otherLink a{display: block;padding: 12px;color: #666;font-weight: 600;}
+.board--otherLink a.on{border-bottom: 2px solid #000;color: #000;}
+.board--list-wrap{border-top: 1px solid #ddd;padding-top: 28px;}
+.board--sort{display: flex;}
+.board--sort-option{height: 42px;display: flex;align-items: center;justify-content: center;text-align: center;padding: 10px 16px;border-radius: 4px;color: #666666;background-color: #f8f8f8;margin-right: 6px;font-size: 15px;cursor: pointer;}
 .board--sort-option.on{background-color: #2f3440;color: #fff;}
 
-.board--list{margin-top: 24px;padding-top: 32px;padding-bottom: 120px;border-top: 1px solid #ddd;display: flex;flex-wrap: wrap;}
+.board--list{margin-top: 24px;padding-top: 32px;padding-bottom: 120px;display: flex;flex-wrap: wrap;}
+.board--list{padding-top: 0;}
 .board--listItem{width: calc(100% / 3 - 40px / 3);margin-bottom: 40px;}
 .board--listItem2{width: calc(25% - 60px / 4);margin-bottom: 40px;}
 .board--listItem:not(:nth-child(3n)){margin-right: 20px;}
 .board--listItem2:not(:nth-child(4n)){margin-right: 20px;}
 .board--listItem-thumb{width: 100%;}
-.board--listItem-thumbImg{width: 100%;padding-top: 100%;border: 1px solid #ddd;border-radius: 6px;background-size: cover;background-position: center center;background-repeat: no-repeat;}
+.board--listItem-thumbImg{width: 100%;padding-top: 100%;border: 1px solid #ddd;border-radius: 6px;background-size: cover;background-repeat: no-repeat;background-position: center center;}
+.board--listItem-thumbImg2{width: 100%;padding-top: 59%;border: 1px solid #ddd;border-radius: 6px;background-size: cover;background-repeat: no-repeat;background-position: center center;}
 .board--listItem-text01{margin: 1em 0;font-size: 16px;font-weight: 600;}
 .board--listItem-text02{font-size: 13px;color: #666666;display: flex;align-items: center;}
 .board--listItem-text02 .material-symbols-outlined{
@@ -27,14 +33,29 @@
 .board--index-button{display: flex;align-items: center;justify-content: center;text-align: center;cursor: pointer;}
 .board--index-button.on{border-radius: 50%;color: #fff;background-color: #000;}
 
+/* board detail */
+.boardDetail--title-text01{font-size: 24px;font-weight: 700;margin-bottom: 20px;line-height: 1;}
+@media all and (max-width:1025px){
+    .board--listItem2{width: calc(100%/3 - 40px / 3);margin-bottom: 40px;}
+    .board--listItem2:not(:nth-child(4n)){margin-right: 0px;}
+    .board--listItem2:not(:nth-child(3n)){margin-right: 20px;}
+}
 @media all and (max-width:769px){
     .board--listItem{width: calc(50% - 10px);}
     .board--listItem:not(:nth-child(3n)){margin-right: 0px;}
     .board--listItem:nth-child(odd){margin-right: 20px;}
-    .board--sort-option{height: 37px;font-size: 14px;padding: 4px 12px;}
 }
-@media all and (max-width:481px){
-    .board--sort-option{height: 32px;font-size: 13px;padding: 4px 10px;}
+@media all and (max-width:650px){
+    .board--listItem2{width: calc(50% - 10px);}
+    .board--listItem2:not(:nth-child(3n)){margin-right: 0px;}
+    .board--listItem2:nth-child(odd){margin-right: 20px;}
+}
+@media all and (max-width:360px){
+    .board--listItem{width: 100%;}
+    .board--listItem:nth-child(odd){margin-right: 0px;}
+
+    .board--listItem2{width: 100%;}
+    .board--listItem2:nth-child(odd){margin-right: 0px;}
 }
 
 /* board detail */
@@ -68,3 +89,9 @@
 .boardDetail--preview-otherItem-text p:first-child{margin-right: 28px;font-size: 14px;}
 .boardDetail--preview-otherItem-text p:last-child{font-size: 16px;}
 .boardDetail--preview-otherItem-date{font-size: 14px;}
+
+.member04--preview{padding-top: 32px;border-top: 1px solid #eee;margin-bottom: 80px;}
+.member04--preview-row{display: flex;margin-bottom: 10px;}
+.member04--preview-text01{width: 64px;display: flex;justify-content: space-between;margin-right: 32px;font-size: 15px;}
+.member04--preview-text02{color: #666666;font-size: 15px;}
+.member04--preview-text01 span{display: block;font-weight: 600;}

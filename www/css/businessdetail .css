@@ -79,13 +79,13 @@
 .swiper-button-disabled{background-color: rgba(255,255,255,0.3);border-radius: 50%;cursor: default;}
 .swiper-button-disabled img{opacity: 0.2;}
 
-@media all and (max-width:767px){
+@media all and (max-width:769px){
     .bsd--eventSwiper-prev,
     .bsd--newsSwiper-prev,
     .bsd--eventSwiper-next,
     .bsd--newsSwiper-next{width: 30px;height: 30px;}
 }
-@media all and (max-width:480px){
+@media all and (max-width:481px){
     .bsd--eventSwiper-prev,
     .bsd--newsSwiper-prev,
     .bsd--eventSwiper-next,
