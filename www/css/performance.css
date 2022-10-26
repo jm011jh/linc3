@@ -1,0 +1,57 @@
+.perf--title{padding-bottom: 50px;border-bottom: 1px solid #ddd;}
+.perf--title-text01{font-size: 40px;font-weight: 700;margin-bottom: 0.7em;line-height: 1;}
+.perf--title-text02{font-size: 16px;color: #666666;}
+
+.perf--sort{display: flex;justify-content: space-between;padding: 15px 0;border-bottom: 1px solid #ddd;}
+.perf--sort-01{display: flex;}
+.perf--sort-01:first-child{}
+.perf--sort-02{display: flex;}
+.perf--sort-selectBox{position: relative;width: 156px;margin-right: 10px;}
+.perf--sort-selectBox-view{padding: 4px 14px;height: 42px;width:100%;display: flex;align-items: center;justify-content: space-between;border: 1px solid #ddd;border-radius: 8px;cursor: pointer;}
+.perf--sort-selectBox-view p{font-weight: 500;}
+.perf--sort-selectBox-view span{font-size: 18px;}
+.on .perf--sort-selectBox-option{display: block;}
+.perf--sort-selectBox-option{position: absolute;bottom: -4px;transform: translate(0,100%);left: 0;width: 100%;background-color: #fff;border-radius: 8px;border: 1px solid #ddd;z-index: 10;display: none;}
+.perf--sort-selectBox-optionItem{width: 100%;height: 42px;display: flex;align-items: center;padding: 4px 14px;font-weight: 400;cursor: pointer;}
+.perf--sort-selectBox-optionItem:hover{font-weight: 700;}
+.perf--sort-checkBox{align-items: center;display: flex;}
+.perf--sort-option,
+.perf--sort-optionValue{display: flex;align-items: center;cursor: pointer;margin-right: 12px;}
+.perf--sort-optionValue-on{color: #1655ff;font-size:10px;display: none;line-height: 1;font-variation-settings:'wght' 800,}
+.perf--sort-optionValue-on .material-symbols-outlined{font-variation-settings:'wght' 800;}
+.perf--sort-optionValue-off{display: block;width: 4px;height: 4px;background-color: #ddd;margin-right: 6px;}
+.perf--sort-optionName{font-size: 13px;margin-left: 6px;}
+.checked .perf--sort-optionName{font-weight: 600;}
+.checked .perf--sort-optionValue-on{display: block;}
+.checked .perf--sort-optionValue-off{display: none;}
+.perf--sort-searchBox{display: flex;align-items: center;border-radius: 24px;border: 1px solid #ddd;overflow: hidden;padding: 0 4px;}
+.perf--sort-searchBox form{height: 42px;}
+.perf--sort-searchBox button{height: 42px;width: 42px;outline: none;border: 0px solid #000;display: block;background-color: rgba(0,0,0,0);}
+.perf--sort-searchBox input{height: 42px;font-size: 14px;padding: 8px;outline: none;border: 0px solid #000;display: block;background-color: rgba(0,0,0,0);}
+.perf--sort-searchBox input::placeholder{color: #aaa;}
+
+.perf--list{display: flex;flex-wrap: wrap;padding-top: 48px;}
+.perf--listItem{width: calc(25% - 60px / 4);margin-bottom: 52px;}
+.perf--listItem:not(:nth-child(4n)){margin-right: 20px;}
+.perf--listItem-thumbImg{width: 100%;padding-top: 56.25%;border-radius: 8px;background-color: #efefef;cursor: pointer;}
+.perf--listItem-text01{margin-top: 16px;display: flex;}
+.perf--listItem-text01 span{display: flex;align-items: center;justify-content: center;text-align: center;height: 24px;border-radius: 4px;background-color: #eff0f5;color: #324f9c;font-size: 12px;font-weight: 500;margin-right: 8px;padding: 4px 8px;}
+.perf--listItem-text02{font-size: 15px;margin-top: 1em;font-weight: 700;line-height: 1;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.perf--listItem-text03{font-size: 13px;color: #666;display: flex;align-items: center;margin-top: 18px;}
+.perf--listItem-text03 .material-symbols-outlined{
+    font-size: 18px;
+    font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;
+}
+.perf--index{padding-bottom: 160px;}
+.perf--index-wrap{display: flex;align-items: center;justify-content: center;text-align: center;font-size: 13px;}
+.perf--index-wrap span{width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;text-align: center;font-size: 13px;}
+.perf--index-wrap span.material-symbols-outlined{font-size: 16px;}
+.perf--index-button{display: flex;align-items: center;justify-content: center;text-align: center;cursor: pointer;}
+.perf--index-button.on{border-radius: 50%;color: #fff;background-color: #000;}

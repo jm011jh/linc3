@@ -20,6 +20,7 @@
 .board--listItem-text03{font-size: 15px;font-weight: 600;margin:12px 0 16px;line-height: 1;}
 .board--listItem-text04{font-size: 14px;color: #526c87;line-height: 1;margin-top: 1.1em;}
 
+.list-contents{padding-bottom: 160px;}
 .board--index-wrap{display: flex;align-items: center;justify-content: center;text-align: center;font-size: 13px;}
 .board--index-wrap span{width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;text-align: center;font-size: 13px;}
 .board--index-wrap span.material-symbols-outlined{font-size: 16px;}

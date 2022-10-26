@@ -23,6 +23,25 @@ $(".bs--sortList-item").click(function(){
 })
 
 $(".map--area-svg").click(function(){
+    if($(this).hasClass("on")){
+
+        $(this).removeClass("on")
+        $(".map--areaHover-svg").removeClass("on")
+        $(".map--area-svgText").removeClass("on")
+
+    } else {
+        
+        let mapNumber = $(this).attr("data-map-number")
+        $(".map--area-svg").removeClass("on")
+        $(this).addClass("on")
+    
+        $(".map--areaHover-svg").removeClass("on")
+        $(".map--areaHover-svg").filter(`[data-map-area=${mapNumber}]`).addClass("on")
+    
+        $(".map--area-svgText").removeClass("on")
+        $(".map--area-svgText").filter(`[data-text=${mapNumber}]`).addClass("on")
+
+    }
     $(".bs--figure").addClass("toLeft")
 })
 $("#bsSchoolGoBackButton").click(function(){

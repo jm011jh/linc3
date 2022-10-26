@@ -23,6 +23,8 @@
 .map--area-svgText{transition-duration: 0.3s;opacity: 1;}
 .map--area-svg.hover,
 .map--area-svgText.hover{opacity: 0;}
+.map--area-svg.on,
+.map--area-svgText.on{opacity: 0;}
 
 .bs--schoolList{display: flex;flex-wrap: wrap;}
 .bs--schoolItem{width: calc(100%/3 - 24px/3);display: block;}
@@ -55,7 +57,7 @@
 
     .bs--contents{margin-top: 20px;padding-top: 28px;}
     .bs--figure{transition-duration: 0.3s;}
-    .bs--figure.toLeft{transform:translate(-100%,0);}
+    .bs--figure.toLeft{transform:translate(-100%,0);transition-delay: 0.3s;}
     .bs--schoolList-goBack-button{display: flex;}
 
     .bs--title-text01{font-size: 24px;}

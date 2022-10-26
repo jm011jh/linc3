@@ -1,5 +1,6 @@
 #mapArea01,#mapArea02,#mapArea03,#mapArea04,#mapArea05{position: absolute;opacity: 0;pointer-events: none;transform: translate(0,0px);transition-duration: 0.3s;}
 #mapArea01.show,#mapArea02.show,#mapArea03.show,#mapArea04.show,#mapArea05.show{opacity: 1;transform: translate(0,-10px);}
+#mapArea01.on,#mapArea02.on,#mapArea03.on,#mapArea04.on,#mapArea05.on{opacity: 1;transform: translate(0,-10px);}
 #mapArea01{width: 37.2%;top: 8%;left: 11%;}
 #mapArea02{width: 77%;top: 0%;left:23.2%;}
 #mapArea03{width: 69.5%;top: 28.3%;left: 1.5%;}
