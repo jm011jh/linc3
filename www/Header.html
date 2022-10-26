@@ -170,48 +170,70 @@
     </div>
 </div>
 <script>
-    $("#headerSearchButton").click(function(){
+    function searchPopOpen(){
         $(".header--searchPopup").addClass("show")
         $(".header--searchBg").addClass("show")
         $("body").addClass("hidden")
-    })
-    $("#headerSearchClose").click(function(){
+    }
+    function searchPopClose(){
         $(".header--searchPopup").removeClass("show")
         $(".header--searchBg").removeClass("show")
         $("body").removeClass("hidden")
-    })
-    $(".header--searchBg").click(function(){
-        $(".header--searchPopup").removeClass("show")
-        $(".header--searchBg").removeClass("show")
-        $("body").removeClass("hidden")
-    })
-    $("#headerSearchHam").click(function(){
+    }
+    function hamPopOpen(){
         $(".header--mobile-menu").addClass("show")
         $("body").addClass("hidden")
-    })
-    $(".header--mobile-menu-bg").click(function(){
+    }
+    function hamPopClose(){
         $(".header--mobile-menu").removeClass("show")
         $("body").removeClass("hidden")
-    })
-
-    $("#isMember .header--tools-isMember-icon").click(function(){
-        if($("#isMember").hasClass("open")){
-            $("#isMember").removeClass("open")
-            $(".isMemberExpand").text("expand_more")
-            $("body").removeClass("hidden-atMobile")
-            $("body").removeClass("hidden")
-        } else {
-            $("#isMember").addClass("open")
+    }
+    function memberPopOpen(){
+        $("#isMember").addClass("open")
             $(".isMemberExpand").text("expand_less")
             $("body").addClass("hidden-atMobile")
             $("body").addClass("hidden")
+    }
+    function memberPopClose(){
+        $("#isMember").removeClass("open")
+            $(".isMemberExpand").text("expand_more")
+            $("body").removeClass("hidden-atMobile")
+            $("body").removeClass("hidden")
+    }
+    function memberPopSwitch(){
+        if($("#isMember").hasClass("open")){
+            memberPopClose()
+        } else {
+            searchPopClose()
+            hamPopClose()
+            memberPopOpen()
         }
+    }
+    $("#headerSearchButton").click(function(){
+        memberPopClose()
+        hamPopClose()
+        searchPopOpen()
+    })
+    $("#headerSearchClose").click(function(){
+        searchPopClose()
+    })
+    $(".header--searchBg").click(function(){
+        searchPopClose()
+    })
+    $("#headerSearchHam").click(function(){
+        searchPopClose()
+        memberPopClose()
+        hamPopOpen()
+    })
+    $(".header--mobile-menu-bg").click(function(){
+        hamPopClose()
+    })
+
+    $("#isMember .header--tools-isMember-icon").click(function(){
+        memberPopSwitch()
     })
     $(".header--member-popup-bg").click(function(){
-        $("#isMember").removeClass("open")
-        $(".isMemberExpand").text("expand_more")
-        $("body").removeClass("hidden-atMobile")
-        $("body").removeClass("hidden")
+        memberPopClose()
     })
     $(".header--mobile-menuItem-list").click(function(){
         if($(this).hasClass("show")){

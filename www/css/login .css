@@ -44,6 +44,6 @@
 .login--form-err{color: #ff1402;font-size: 12px;display: none;margin-bottom: 36px;}
 .err .login--form-err{display: flex;}
 .login--form-err span{font-size: 14px;margin-right: 2px;}
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .login--form{padding: 0 20px;}
 }

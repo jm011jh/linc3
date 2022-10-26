@@ -27,7 +27,7 @@
 .board--index-button{display: flex;align-items: center;justify-content: center;text-align: center;cursor: pointer;}
 .board--index-button.on{border-radius: 50%;color: #fff;background-color: #000;}
 
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .board--listItem{width: calc(50% - 10px);}
     .board--listItem:not(:nth-child(3n)){margin-right: 0px;}
     .board--listItem:nth-child(odd){margin-right: 20px;}

@@ -62,7 +62,7 @@
     .perf--sort-01{flex-direction: column-reverse;justify-content: flex-start;}
     .perf--sort-02:first-child{margin-top: 20px;}
 }
-@media all and (max-width: 769px){
+@media all and (max-width: 768px){
     .perf--listItem{width: calc(50% - 5px);}
     .perf--listItem:not(:nth-child(4n)){margin-right: 0px;}
     .perf--listItem:not(:nth-child(3n)){margin-right: 0px;}
@@ -179,7 +179,7 @@
     .perd--others01-listItem-info{width: 100%;}
     .perd--head{margin-bottom: 60px;}
 }
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .perd--contents{padding-top: 24px;}
     .perd--others01-listItem{width: calc(50% - 10px);display: flex;margin-bottom: 28px;}
     .perd--others01-listItem:not(:nth-child(3n)){margin-right: 0px;}

@@ -49,7 +49,7 @@
 .bsd--event-info p{display: flex;font-size: 14px;color: #666666;}
 .bsd--event-info p:first-child{margin-right: 10px;}
 
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .bsd--newsSwiper .swiper-slide{padding:16px 20px;}
     .bsd--text01{font-size: 20px;}
     .bsd--textBox{padding: 40px 0 32px;}
@@ -79,7 +79,7 @@
 .swiper-button-disabled{background-color: rgba(255,255,255,0.3);border-radius: 50%;cursor: default;}
 .swiper-button-disabled img{opacity: 0.2;}
 
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .bsd--eventSwiper-prev,
     .bsd--newsSwiper-prev,
     .bsd--eventSwiper-next,

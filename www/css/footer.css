@@ -29,7 +29,7 @@
 .footer--text02{font-size: 13px;color: #666;}
 .footer--company{display: flex;align-items: center;}
 .footer--companyItem:not(:first-child){margin-left: 24px;}
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .footer--text02{font-size: 12px;}
     .footer--row:first-child{flex-direction: column;}
     .footer--logo{margin-bottom: 14px;}

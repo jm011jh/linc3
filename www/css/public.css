@@ -72,7 +72,7 @@
         --sidePd--:40px;
     }
 }
-@media all and (max-width:769px) {
+@media all and (max-width:768px) {
     :root{
         --sidePd--:20px;
     }
@@ -103,7 +103,9 @@ body.hidden{overflow: hidden;height: 100%;}
 .public--container{padding-top: 99px;}
 .public--wrap{width: 100%;max-width: 1400px;padding: 0 var(--sidePd--);margin-left: auto;margin-right: auto;}
 .public--padding{padding: 0 var(--sidePd--);}
-
+@media all and (max-width:1025px){
+    .public--container[data-sub="show"]{padding-top: 120px;}
+}
 .public--where{width: 100%;display: flex;align-items:center;justify-content: flex-end;font-size: 13px;margin-bottom: 20px;line-height: 1;}
 .public--where a,
 .public--where p{display: flex;align-items: center;}

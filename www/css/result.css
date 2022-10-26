@@ -58,7 +58,7 @@
     .result--row-item2-info04{margin-top: 20px;padding-top: 14px;font-size: 12px;}
     .result--row-item2-info04 .material-symbols-outlined{font-size: 16px;}
 }
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .result--row-item{width: calc(50% - 10px);}
     .result--row-item:not(:nth-child(3n)){margin-right: 0px;}
     .result--row-item:nth-child(odd){margin-right: 20px;}

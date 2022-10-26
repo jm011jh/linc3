@@ -76,7 +76,7 @@
     .list--item:not(:nth-child(even)){margin-right: 20px;}
     .list--itemInfo-time{margin-top: 15px;padding-top: 12px;}
 }
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .list-contents{padding-top: 0px;}
     .list--bnr{flex-direction: column-reverse;align-items: center;padding: 0 20px;padding-bottom: 48px;padding-top: 20px;border-radius: 10px;}
     .list--bnr-bg{margin-bottom: 40px;}
@@ -110,7 +110,7 @@
 }
 .list--viewMore{display: flex;justify-content: center;margin-bottom: 64px;}
 .list--viewMore-btn{border: 1px solid #eee;border-radius: 8px;font-weight: 700;font-size: 14px;padding: 22px;width: 100%;max-width: 240px;text-align: center;cursor: pointer;}
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .list--viewMore{margin-bottom: 40px;}
     .list--viewMore-btn{max-width: 180px;padding: 16px;font-size: 13px;}
 }

@@ -115,7 +115,7 @@
     .header--searchPopup-close span{width: 20px;margin-right: 0;}
     /* .header--subWrap{display: none;} */
 }
-@media all and (max-width:769px){
+@media all and (max-width:768px){
     .header--logo{width: 48px;min-width: 48px;max-width: 48px;}
     .header--subWrap-listItem a{padding: 14px 12px;font-size: 13px;}
     .header--search-tags{display: none;}
